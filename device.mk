@@ -239,6 +239,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     libdrm.vendor
 
+# DT2W
+PRODUCT_PACKAGES += \
+    XiaomiDt2w
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
