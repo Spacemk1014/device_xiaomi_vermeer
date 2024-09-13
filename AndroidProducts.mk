@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_vermeer.mk
+    $(LOCAL_DIR)/infinity_vermeer.mk

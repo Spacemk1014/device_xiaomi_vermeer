@@ -8,24 +8,23 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common PixelProject stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common infinity X stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from vermeer device
 $(call inherit-product, device/xiaomi/vermeer/device.mk)
 
-# PixelProject Flags
-CUSTOM_BUILD_TYPE := Unofficial
-TARGET_FACE_UNLOCK_SUPPORTED := true
-USE_PIXEL_CHARGER := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
+# Infinity X Settings
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := Justin117(Spacemk)
+TARGET_SUPPORTS_BLUR := true
+TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
+TARGET_BUILD_GOOGLE_TELEPHONY := true
 TARGET_SUPPORTS_QUICK_TAP  := true
-PRODUCT_NO_CAMERA := true
-TARGET_SUPPORTS_GOOGLE_BATTERY := false
-TARGET_SUPPORTS_CLEAR_CALLING := true
 
 PRODUCT_DEVICE := vermeer
-PRODUCT_NAME := aosp_vermeer
+PRODUCT_NAME := infinity_vermeer
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 23113RKC6G
 PRODUCT_MANUFACTURER := xiaomi
