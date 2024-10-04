@@ -35,7 +35,7 @@ BOARD_KERNEL_CMDLINE := \
     disable_dma32=on \
     rcu_nocbs=all \
     rcutree.enable_rcu_lazy=1 \
-    mtdoops.fingerprint=$(LINEAGE_VERSION)
+    mtdoops.fingerprint=$(DERP_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \

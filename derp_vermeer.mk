@@ -8,14 +8,35 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common DerpfestOS stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Inherit from vermeer device
 $(call inherit-product, device/xiaomi/vermeer/device.mk)
 
+# Derp
+DERP_BUILDTYPE := UNOFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_NOT_USES_BLUR := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+
+# GMS
+WITH_GMS := true
+
+# Charging Animation
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
+# Debug
+TARGET_DEFAULT_ADB_ENABLED := true
+
+# Disable UDFPS animations (unsupported)
+EXTRA_UDFPS_ICONS := false
+
 PRODUCT_DEVICE := vermeer
-PRODUCT_NAME := lineage_vermeer
+PRODUCT_NAME := derp_vermeer
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 23113RKC6G
 PRODUCT_MANUFACTURER := xiaomi

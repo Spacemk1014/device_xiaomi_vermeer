@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     VermeerFrameworks \
+    VermeerSettingsOverlayVermeer \
     VermeerSettings23113RKC6C \
     VermeerSettings23113RKC6G \
     VermeerSettingsProvider23113RKC6C \
