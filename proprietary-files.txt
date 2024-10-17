@@ -561,8 +561,8 @@ odm/etc/camera/beauty_style_nude.cng|262c3fc3bf282da60140da27084a51daf9c7b88f
 odm/etc/camera/bokehParams.json|d5b47d30facf3cbe65208e3028b6be4fa18db291
 odm/etc/camera/camerabooster.json|76873f1ee1cb7311d396cb4d3112e87e7de15cfa
 odm/etc/camera/camxoverridesettings.txt|dbebe1c9c77599dca6fdfc21349a881ebcc0ec45
-odm/etc/camera/com.xiaomi.dcal.wu.golden|330d759c472f1c3f069250042000ea949b31aa1b
 odm/etc/camera/com.xiaomi.dcal.wu.golden2|0d4332fba8f579133226209cbd81d0eb2329d588
+odm/etc/camera/com.xiaomi.dcal.wu.golden|330d759c472f1c3f069250042000ea949b31aa1b
 odm/etc/camera/config_para_madrid.yaml|a030252ff848cec36d36f1af1cb36a5edff2fcfd
 odm/etc/camera/config_para_normal.yaml|e4186d57b9898dad1d7b1a51e843cf36954a742d
 odm/etc/camera/deblur_txt_dsp.dlc|62502664ad8c4ec0a1fac0b9fe42b0765be98d52

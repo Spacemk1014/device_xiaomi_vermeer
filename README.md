@@ -1,4 +1,4 @@
-Device configuration for POCO F6 Pro / Redmi K70 (vermeer)
+Device Tree for POCO F6 Pro / Redmi K70 (vermeer)
 =========================================
 
 The POCO F6 Pro / Redmi K70 is a flagship midranger phone from Xiaomi released under its POCO and Redmi brands.
@@ -19,13 +19,13 @@ Display | 1440 x 3200 pixels, 20:9 ratio (~526 ppi density), AMOLED, 68B colors,
 
 ## Device picture
 
-![vermeer](https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/5/9/591666.png "vermeer")
+![vermeer](https://www.mytrendyphone.es/images/Xiaomi-Poco-F6-Pro-256GB-White-6941812774786-04072024-00-p.webp)
 
 ## Copyright
 
 ```
 #
-# Copyright (C) 2024 Paranoid Android
+# Copyright (C) 2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
