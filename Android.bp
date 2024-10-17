@@ -1,8 +1,12 @@
 //
-// Copyright (C) 2024 Paranoid Android
+// Copyright (C) 2024 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
 
 soong_namespace {
+    imports: [
+        "hardware/xiaomi",
+        "hardware/qcom-caf/bootctrl"
+    ],
 }
