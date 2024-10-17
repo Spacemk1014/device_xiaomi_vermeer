@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2024 Paranoid Android
+# Copyright (C) 2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -7,8 +7,26 @@
 DEVICE_PATH := device/xiaomi/vermeer
 KERNEL_PATH := device/xiaomi/vermeer-kernel
 
-# Inherit from sm8550-common
-include device/xiaomi/sm8550-common/BoardConfigCommon.mk
+BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
+
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    init_boot \
+    odm \
+    product \
+    recovery \
+    system \
+    system_dlkm \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vendor \
+    vendor_boot \
+    vendor_dlkm
 
 # Display
 TARGET_SCREEN_DENSITY := 530
