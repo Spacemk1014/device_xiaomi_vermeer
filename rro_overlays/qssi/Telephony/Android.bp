@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "TelephonyRes_Sys",
+    product_specific: true,
+}

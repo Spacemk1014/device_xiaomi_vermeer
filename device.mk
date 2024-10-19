@@ -427,7 +427,7 @@ PRODUCT_COPY_FILES += \
 # Kernel Binary
 KERNEL_PREBUILT_DIR := device/xiaomi/vermeer-kernel
 
-# Overlays
+# Overlays (vermeer)
 PRODUCT_PACKAGES += \
     VermeerFrameworks \
     VermeerSettings23113RKC6C \
@@ -439,6 +439,41 @@ PRODUCT_PACKAGES += \
     VermeerWifiRes23113RKC6G \
     VermeerWifiResMainline23113RKC6C \
     VermeerWifiResMainline23113RKC6G \
+
+# Overlays (Qssi)
+PRODUCT_PACKAGES += \
+    CarrierConfigRes_Sys \
+    FrameworksRes_Sys \
+    QCOMGPSFrameworksOverlay \
+    SettingsRes_Sys \
+    SystemUIRes_Sys \
+    TelecommRes_Sys \
+    TelephonyRes_Sys \
+    WifiRes_Sys \
+    WifiResMainline_Sys
+
+# Overlays (vendor)
+PRODUCT_PACKAGES += \
+    FrameworksResTarget_kalama \
+    Nfc \
+    SecureElementResTarget_kalama \
+    WifiResTarget_kalama \
+    WifiResTarget_spf_kalama \
+    WifiResTargetMainline_kalama \
+    WifiResTargetMainline_spf_kalama
+
+# Overlays (ODM)
+PRODUCT_PACKAGES += \
+    CarrierConfigRes \
+    CarrierConfigResMiui \
+    DeviceAsWebcamRes \
+    Frameworks \
+    SecureElement \
+    Settings \
+    SystemUI \
+    SystemUIAOSPA \
+    WifiRes \
+    WifiResMainline \
 
 # Properties
 PRODUCT_COPY_FILES += \

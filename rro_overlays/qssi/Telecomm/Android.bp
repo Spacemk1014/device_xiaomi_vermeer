@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "TelecommRes_Sys",
+    product_specific: true,
+}
