@@ -1004,3 +1004,15 @@ service qrtr-lookup /vendor/bin/qrtr-lookup
     group system
     disabled
     oneshot
+
+service screencast /system/bin/screencast --no-header-bar
+    class main
+    user system
+    group system
+    disabled
+    
+on boot
+    # Screencast permissions
+    chmod 0666 /dev/graphics/fb0
+    chmod 0666 /dev/graphics/fb1
+    chmod 0666 /dev/media*

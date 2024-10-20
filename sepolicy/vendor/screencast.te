@@ -1,0 +1,8 @@
+type screencast, domain;
+type screencast_exec, exec_type, vendor_file_type, file_type;
+
+# Required Permissions
+allow screencast mediacodec_service:service_manager find;
+allow screencast surfaceflinger_service:service_manager find;
+allow screencast audio_service:service_manager find;
+allow screencast mediametrics_service:service_manager find;

@@ -598,6 +598,20 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
+# Screen Recording
+PRODUCT_PACKAGES += \
+    libaudio-resampler \
+    libmedia_jni \
+    libstagefright_soft_aacdec \
+    libstagefright_soft_aacenc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.permission.CAPTURE_SECURE_VIDEO_OUTPUT.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.permission.CAPTURE_SECURE_VIDEO_OUTPUT.xml \
+    frameworks/native/data/etc/android.permission.CAPTURE_VIDEO_OUTPUT.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.permission.CAPTURE_VIDEO_OUTPUT.xml
+
 # Telephony
 PRODUCT_PACKAGES += \
     extphonelib \
