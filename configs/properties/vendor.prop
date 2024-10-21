@@ -289,6 +289,9 @@ vendor.hw.fm.init=0
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
+# FS-verity
+ro.apk_verity.mode=2
+
 # Graphics
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.kalama.api33
 ro.hardware.egl=adreno
